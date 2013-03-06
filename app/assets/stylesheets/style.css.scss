@@ -1,0 +1,30 @@
+/* You Can Change The Font*/
+/*$baseFontFamily: Oxygen:
+@import url(http://font.goggleapis.com/css?family=Oxygen);*/
+
+/*Change color of btnPrimary*/
+/*$btnPrimaryBackground: Blue;*/
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+/*Remove Shadow in Nav Bar*/
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+	}
+
+.footer {
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: gray;
+	}
+}
