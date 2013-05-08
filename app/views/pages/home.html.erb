@@ -1,13 +1,20 @@
 <% if user_signed_in?%>
-	<h1>You're logged in!</h1>
+	<div class="hero-unit">
+		<h1>Welcome Back!</h1>
+		<p>
+		Start sharing. Click here to see your
+		<%= link_to "Pins", "/pins" %>.
+		</p>
+
 <% else %>
 	<div class="hero-unit">
-		<h1>Welcome to One Month Rails!</h1>
+		<h1>Welcome to Social Photography</h1>
 		<p>
-			You found the homepage for the
-			<%= link_to "One Month Rails", "http://onemonthrails.com" %>
-			application.
+			Where you can take pictures of the world, and mark its location for the world to view. Created by 
+			<%= link_to "Gilbert Chan", "http://LinkedIn.com/in/thegilbertchan" %>
+			.
 		</p>
+		<br>
 		<p>
 			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large"%>
 		</p>
