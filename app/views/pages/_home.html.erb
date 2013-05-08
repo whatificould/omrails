@@ -1,20 +1,14 @@
 <% if user_signed_in?%>
-	<div class="hero-unit">
-		<h1>Welcome Back!</h1>
-		<p>
-		Start sharing. Click here to see your
-		<%= link_to "Pins", "/pins" %>.
-		</p>
+<br>
+<h1>Welcome back to Social Photography!</h1>
 
 <% else %>
 	<div class="hero-unit">
 		<h1>Welcome to Social Photography</h1>
 		<p>
 			Where you can take pictures of the world, and mark its location for the world to view. Created by 
-			<%= link_to "Gilbert Chan", "http://LinkedIn.com/in/thegilbertchan" %>
-			.
+			<%= link_to "Gilbert Chan", "http://LinkedIn.com/in/thegilbertchan" %>.
 		</p>
-		<br>
 		<p>
 			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large"%>
 		</p>
